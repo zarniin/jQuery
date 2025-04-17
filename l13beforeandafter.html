@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Before and After Method</title>
+	</head>
+	<body>
+
+		<h1>Hello Myanmar</h1>
+		<h1>Hello Thailand</h1>
+
+		<button type="button" id="beforebtn">Before Insert</button>
+		<button type="button" id="afterbtn">After Insert</button>
+
+
+		<script src="./libs/jquery-3.7.1.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+
+				// before() အပြင် ကနေ value တိုးတယ် 
+				$('#beforebtn').click(function(){
+					$('h1').before('Hello World');
+				});
+
+				// after() tag ရဲ. အပြင် ကနေ value တိုးတယ်
+				$('#afterbtn').click(function(){
+					$('h1').after('<p><b>I am working</b></p>');
+				});
+
+			});
+
+		</script>
+		
+	</body>
+</html>
+
+<!-- l13beforeandafter.html  -->
+	<!-- (i). before() / after()  -->
+
+	<!-- 	Exercise 
+
+			(i).before() အပြင် ကနေ value တိုးတယ် 
+				$('#beforebtn').click(function(){
+					$('h1').before('Hello World');
+				});
+
+			(ii).after() tag ရဲ. အပြင် ကနေ value တိုးတယ်
+				$('#afterbtn').click(function(){
+					$('h1').after('<p><b>I am working</b></p>');
+				}); 
+	-->
+
+
+
