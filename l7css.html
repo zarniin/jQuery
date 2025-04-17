@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS Method</title>
+	</head>
+	<body>
+
+		<h1>Hello Myanmar</h1>
+		<h2>Hello Thailand</h2>
+		<h3>Hello Indonesia</h3>
+		<h4>Hello Srilanka</h4>
+
+		<button type="button" class="btn">Change new Color</button>
+
+
+
+
+		<script src="./libs/jquery-3.7.1.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+
+				$('.btn').click(function(){
+
+					// Css Method (properties,value)
+					// Single Line
+					$('h1').css('background-color','red');
+					$('h2').css('backgroundColor','steelblue');
+					$('h3').css('backgroundColor','green');
+
+					// Multi Line 
+					// object (key:value)
+					$('h4').css({
+						'background-color':'blue',
+						'color':'#fff',
+						'font-family':'Arial',
+						'font-size':'20px'
+					});
+
+				});
+
+			});
+
+
+
+			
+		</script>
+		
+	</body>
+</html>
+
+<!-- l7css.html  -->
+	<!-- Css Method (Single / Multi)  -->
+
+	<!-- 	Exercsie 
+
+				Single Line (Properties,value)
+					$('h1').css('background-color','red');
+					$('h2').css('backgroundColor','steelblue');
+					$('h3').css('backgroundColor','green');
+
+				Multi Line (Object Key:Value) 
+					$('h4').css({
+							'background-color':'blue',
+							'color':'#fff',
+							'font-family':'Arial',
+							'font-size':'20px'
+						}); 
+	-->
+
+
+
