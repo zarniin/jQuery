@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Clone Method</title>
+	</head>
+	<body>
+
+		<h1>Hello Myanmar</h1>
+
+		<div class="container">
+			
+
+		</div>
+
+		<button type="button">Clone Me</button>
+
+
+		<script src="./libs/jquery-3.7.1.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+
+				// Method => Clone().appendTo()   / (copy) 
+				// $('button').click(function(){
+				// 	$('h1').clone().appendTo('.container');
+				// });
+
+				$('button').click(function(){
+					$('.box h1').clone().appendTo('.container');
+				});
+
+			});
+
+		</script>
+		
+	</body>
+</html>
+
+<!-- l14clone.html  -->
+	<!-- (i). Clone Method  -->
+
+	<!-- 	Exercsie 
+			(i).Clone().appendTo()
+
+			Method 1 indefine
+				$('button').click(function(){
+					$('h1').clone().appendTo('.container');
+				});
+
+			Method 2 define
+				$('button').click(function(){
+					$('.box h1').clone().appendTo('.container');
+				}); 
+	-->
+
+
+
+
+
+

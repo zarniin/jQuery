@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Remove and Empty Method</title>
+	</head>
+	<body>
+
+		<div>
+			<h1>Hello Heading Tag H1</h1>
+			<h2>Hello Heading Tag H2</h2>
+			<h3>Hello Heading Tag H3</h3>
+			<h2>Hello Heading Tag H2</h2>
+			<h1>Hello Heading Tag H1</h1>
+			<span>Hello i am span Tag</span>
+		</div>
+
+		<div>
+			<h1>Hello Heading Tag H1</h1>
+			<h2>Hello Heading Tag H2</h2>
+			<h3>Hello Heading Tag H3</h3>
+			<h2 class="heading2">Hello Heading Tag H2</h2>
+			<h1>Hello Heading Tag H1</h1>
+			<span>Hello i am span Tag</span>
+		</div>
+
+		<button type="button" id="remove-btn">Remove H2</button>
+		<button type="button" id="detach-btn">Detach Div</button>
+		<button type="button" id="empty-btn">Empty</button>
+
+		<button type="button" id="add-btn">Add</button>
+
+
+
+		<script src="./libs/jquery-3.7.1.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+
+				// remove()
+				$('#remove-btn').click(function(){
+					$('h2').remove();
+				});
+
+				// detach() 
+				$('#detach-btn').click(function(){
+					$('div').detach();
+				});
+
+				// empty()
+				$('#empty-btn').click(function(){
+					$('div').empty();
+				});
+
+			});
+
+		</script>
+		
+	</body>
+</html>
+
+<!-- l14.removeandempty.html-->
+	<!-- (i).remove / detach / empty  -->
+
+	<!-- 	Exercise 
+			Remove() 
+				$('#remove-btn').click(function(){
+							$('h2').remove();
+				});
+
+			Detach() 
+				$('#detach-btn').click(function(){
+					$('div').detach();
+				});
+
+			Empty()  
+				$('#empty-btn').click(function(){
+					$('div').empty();
+				}); 
+	-->
+
+
+
+
+
+
+
