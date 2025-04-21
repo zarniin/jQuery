@@ -27,7 +27,7 @@
 		<button type="button" id="detach-btn">Detach Div</button>
 		<button type="button" id="empty-btn">Empty</button>
 
-		<button type="button" id="add-btn">Add</button>
+		<button type="button" id="add-btn">Add Me</button>
 
 
 
@@ -51,6 +51,51 @@
 					$('div').empty();
 				});
 
+				// add() 
+				$('#add-btn').click(function(){
+
+					// $('h1').css({
+					// 	"background-color":"yellow",
+					// 	"border":"3px dashed red"
+					// });
+
+					// $('h1,h2').css({
+					// 	"background-color":"yellow",
+					// 	"border":"3px dashed red"
+					// });
+
+					// $('h2.heading2').css({
+					// 	"background-color":"yellow",
+					// 	"border":"3px dashed red"
+					// });
+
+					// $('h1,h2,h3').css({
+					// 	"background-color":"yellow",
+					// 	"border":"3px dashed red"
+					// });
+
+					// $('h1,h2,h3,span').css({
+					// 	"background-color":"yellow",
+					// 	"border":"3px dashed red"
+					// });
+
+					// $('h1').add('span').css({
+					// 	"background-color":"yellow",
+					// 	"border":"3px dashed red"
+					// });
+
+					// $('h1').add('span,h3').css({
+					// 	"background-color":"yellow",
+					// 	"border":"3px dashed red"
+					// });
+
+					$('h1').add('span,h3').add('h2').css({
+						"background-color":"yellow",
+						"border":"3px dashed red"
+					});
+
+				});
+
 			});
 
 		</script>
@@ -59,7 +104,7 @@
 </html>
 
 <!-- l14.removeandempty.html-->
-	<!-- (i).remove / detach / empty  -->
+	<!-- (i).remove / detach / empty / add -->
 
 	<!-- 	Exercise 
 			Remove() 
@@ -76,6 +121,18 @@
 				$('#empty-btn').click(function(){
 					$('div').empty();
 				}); 
+
+			add() 
+				$('h1').add('span,h3').css({
+				 	"background-color":"yellow",
+				 	"border":"3px dashed red"
+				 });
+
+				$('h1').add('span,h3').add('h2').css({
+					"background-color":"yellow",
+					"border":"3px dashed red"
+				});
+
 	-->
 
 
